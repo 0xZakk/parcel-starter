@@ -1,0 +1,27 @@
+/**
+ * Breakpoints
+ * Base unit: 16px (1em)
+ */
+
+$phone: 37.438em; // 599px
+$phablet: 37.5em; //600px
+$tablet: 56.25em; // 900px
+$laptop: 75em; // 1200px
+$desktop: 90em; // 1440px
+
+$landscape: '(orientation: landscape)';
+
+$phone-only: '(max-width: #{$phone})';
+$phablet-only: '(min-width: #{$phablet}) and (max-width: #{$tablet})';
+$tablet-only: '(min-width: #{$tablet}) and (max-width: #{$laptop})';
+$laptop-only: '(min-width: #{$laptop}) and (max-width: #{$desktop})';
+
+$up-to-phablet: '(max-width: #{$phablet})';
+$up-to-tablet: '(max-width: #{$tablet})';
+$up-to-laptop: '(max-width: #{$laptop})';
+$up-to-desktop: '(max-width: #{$desktop})';
+
+$phablet-up: '(min-width: #{$phablet})';
+$tablet-up: '(min-width: #{$tablet})';
+$laptop-up: '(min-width: #{$laptop})';
+$desktop-up: '(min-width: #{$desktop})';
